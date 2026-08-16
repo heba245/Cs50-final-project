@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.card{
+    width: 400px;
+    margin: 100px auto;
+    padding: 50px;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+}
+button{
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.quizitem{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+.attemptbutton{
+    background-color: rgb(255, 89, 0);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+#takequestionpage h2{
+    margin-bottom: 30px;
+
+}
+#takequestionpage button{
+    margin-top: 30px;
+}
+
+#resultpage {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+#resultpage h2 {
+    margin-bottom: 20px;
+}
+
+#resultmessage {
+    margin-bottom: 25px;
+}
+
+#Backbutton {
+    background-color: rgb(255, 89, 0);
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+}

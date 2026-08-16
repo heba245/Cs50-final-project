@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+    <header>
+        <h1>Welcome to the Programming Quiz!</h1>
+         <p>Test your programming knowledge and see how much you know</p>
+    
+    </header>
+
+    <main class="card">
+        <h2>Enter your name:</h2>
+        <input type="text" id="username" placeholder="your name">
+        <button id="startbutton">start</button>
+    </main>
+
+    <section id="choicepage" class="card" style="display: none;" >
+        <h2 id="welcomemessage">welcome</h2>
+        <p>what do you want to do?</p>
+
+        <button id="takequiz">Take Quiz</button>
+        <button id="creatquiz">Creat Quiz</button>
+    </section>
+
+    <section id="levelpage" class="card" style="display: none;">
+
+        <input type="text" name="quizname" id="quizname" placeholder="enter quiz name" >
+
+        <h2 id="leveltitle">select your Quiz level:</h2>
+
+        <select id="levelselect">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+            <option value="Mixed">Mixed</option>
+            
+        </select><br>
+
+        <button id="createnext" class="butt">NEXT</button>
+        <button id="takenext"  class="butt" style="display: none;">NEXT</button>
+
+
+    </section>
+
+    <section id="questionpage" class="card" style="display: none;">
+        <h2>Creat your Question</h2>
+        <input type="text" id="question" placeholder="Enter your question:"><br><br>
+
+        <input type="text" id="A" placeholder="option1"><br>
+        <input type="text" id="B" placeholder="option2"><br>
+        <input type="text" id="C" placeholder="option3"><br>
+        <input type="text" id="D" placeholder="option4"><br>
+
+        <p>Select the correct answer</p>
+        
+        <input type="radio" name="correctanswer" value="A">
+         <label>A</label>
+        
+        <input type="radio" name="correctanswer" value="B">
+         <label>B</label>
+       
+        <input type="radio" name="correctanswer" value="C">
+          <label>C</label>
+        
+        <input type="radio" name="correctanswer" value="D">
+        <label>D</label><br>
+
+        <BUtton id="addquestion">Add Question</BUtton>
+        <button id="savequiz">Save Quiz</button>
+
+
+    </section>
+
+
+   <section id="quizpage" class="card" style="display: none;">
+    <h2>Select A Quiz</h2>
+    <div id="quizlist"></div>
+   </section>
+
+   <section id="takequestionpage" class="card" style="display: none;">
+
+    <h2 id="quiztitle"></h2>
+
+    <h3 id="q1"></h3>
+    <input type="radio" name="q1" id="q1A" value="A">
+    <label id="q1ALabel"></label><br>
+
+    <input type="radio" name="q1" id="q1B" value="B">
+    <label id="q1BLabel"></label><br>
+
+    <input type="radio" name="q1" id="q1C" value="C">
+    <label id="q1CLabel"></label><br>
+
+    <input type="radio" name="q1" id="q1D" value="D">
+    <label id="q1DLabel"></label><br>
+
+
+    <h3 id="q2"></h3>
+    <input type="radio" name="q2" id="q2A" value="A">
+    <label id="q2ALabel"></label><br>
+
+    <input type="radio" name="q2" id="q2B" value="B">
+    <label id="q2BLabel"></label><br>
+
+    <input type="radio" name="q2" id="q2C" value="C">
+    <label id="q2CLabel"></label><br>
+
+    <input type="radio" name="q2" id="q2D" value="D">
+    <label id="q2DLabel"></label><br>
+
+
+    <h3 id="q3"></h3>
+    <input type="radio" name="q3" id="q3A" value="A">
+    <label id="q3ALabel"></label><br>
+
+    <input type="radio" name="q3" id="q3B" value="B">
+    <label id="q3BLabel"></label><br>
+
+    <input type="radio" name="q3" id="q3C" value="C">
+    <label id="q3CLabel"></label><br>
+
+    <input type="radio" name="q3" id="q3D" value="D">
+    <label id="q3DLabel"></label><br>
+
+
+    <h3 id="q4"></h3>
+    <input type="radio" name="q4" id="q4A" value="A">
+    <label id="q4ALabel"></label><br>
+
+    <input type="radio" name="q4" id="q4B" value="B">
+    <label id="q4BLabel"></label><br>
+
+    <input type="radio" name="q4" id="q4C" value="C">
+    <label id="q4CLabel"></label><br>
+
+    <input type="radio" name="q4" id="q4D" value="D">
+    <label id="q4DLabel"></label><br>
+
+
+    <h3 id="q5"></h3>
+    <input type="radio" name="q5" id="q5A" value="A">
+    <label id="q5ALabel"></label><br>
+
+    <input type="radio" name="q5" id="q5B" value="B">
+    <label id="q5BLabel"></label><br>
+
+    <input type="radio" name="q5" id="q5C" value="C">
+    <label id="q5CLabel"></label><br>
+
+    <input type="radio" name="q5" id="q5D" value="D">
+    <label id="q5DLabel"></label><br>
+
+    <button id="submitquiz">Submit Quiz</button>
+
+
+</section>
+
+<section id="resultpage" style="display: none;">
+    <h2>Quiz Result</h2>
+    <h3 id="resultmessage"></h3>
+    <button id="Backbutton">Back</button>
+</section>
+
+
+   <script src="script.js"></script>
+
+</body>
+</html>
